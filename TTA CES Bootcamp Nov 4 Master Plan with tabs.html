@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTA CES Physical Bootcamp - Program Deck</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #111827; /* bg-gray-900 */
+        }
+        .tab-btn.active {
+            color: #22d3ee; /* cyan-400 */
+            border-bottom-color: #22d3ee;
+            box-shadow: 0 4px 14px 0 rgba(34, 211, 238, 0.3);
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .neon-glow {
+            box-shadow: 0 0 5px rgba(34, 211, 238, 0.4), 0 0 10px rgba(34, 211, 238, 0.3), 0 0 15px rgba(34, 211, 238, 0.2);
+        }
+        .neon-text {
+            text-shadow: 0 0 5px rgba(217, 70, 239, 0.7), 0 0 10px rgba(217, 70, 239, 0.5);
+        }
+        .card-gradient {
+            background: linear-gradient(145deg, #1f2937, #111827);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -1px;
+            top: 1rem;
+            width: 2px;
+            height: calc(100% + 1rem);
+            background-color: #374151; /* gray-700 */
+        }
+        .timeline-dot {
+            position: absolute;
+            left: -9px;
+            top: 1rem;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            border: 3px solid #111827;
+        }
+        .flow-arrow {
+            font-size: 2rem;
+            color: #4b5563; /* gray-600 */
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <div class="container mx-auto p-4 md:p-8">
+        
+        <!-- Header -->
+        <header class="text-center mb-8 md:mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-white neon-text bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-500 to-cyan-400 mb-2">
+                TTA CES Physical Bootcamp
+            </h1>
+            <p class="text-lg text-gray-400">Official Program Deck | November 4, 2025</p>
+        </header>
+
+        <!-- Tabs Navigation -->
+        <div class="mb-8 border-b border-gray-700">
+            <nav class="flex flex-wrap -mb-px" id="tab-nav">
+                <button class="tab-btn active text-lg font-semibold p-4 border-b-2 border-transparent transition-all duration-300 ease-in-out" data-tab="cover">Cover</button>
+                <button class="tab-btn text-lg font-semibold p-4 border-b-2 border-transparent transition-all duration-300 ease-in-out" data-tab="overview">Overview</button>
+                <button class="tab-btn text-lg font-semibold p-4 border-b-2 border-transparent transition-all duration-300 ease-in-out" data-tab="schedule">Schedule</button>
+                <button class="tab-btn text-lg font-semibold p-4 border-b-2 border-transparent transition-all duration-300 ease-in-out" data-tab="flow">Program Flow</button>
+                <button class="tab-btn text-lg font-semibold p-4 border-b-2 border-transparent transition-all duration-300 ease-in-out" data-tab="morning-workshops">Morning Workshops</button>
+                <button class="tab-btn text-lg font-semibold p-4 border-b-2 border-transparent transition-all duration-300 ease-in-out" data-tab="afternoon-workshops">Afternoon Workshops</button>
+                <button class="tab-btn text-lg font-semibold p-4 border-b-2 border-transparent transition-all duration-300 ease-in-out" data-tab="mentors">Mentors</button>
+                <button class="tab-btn text-lg font-semibold p-4 border-b-2 border-transparent transition-all duration-300 ease-in-out" data-tab="curriculum">Curriculum</button>
+                <button class="tab-btn text-lg font-semibold p-4 border-b-2 border-transparent transition-all duration-300 ease-in-out" data-tab="logistics">Logistics</button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-content-container">
+            <!-- Cover Tab -->
+            <div id="cover" class="tab-content active animate-fade-in">
+                <div class="min-h-[50vh] flex flex-col items-center justify-center text-center">
+                    <h2 class="text-5xl md:text-6xl font-bold text-white neon-text bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-500 to-cyan-400">
+                        TTA CES Physical Bootcamp
+                    </h2>
+                    <p class="text-2xl text-gray-300 mt-4">Complete Program Deck for Government Presentation</p>
+                    <div class="mt-8 text-lg text-gray-400">
+                        <p><span class="font-semibold text-gray-200">Date:</span> November 4, 2025</p>
+                        <p><span class="font-semibold text-gray-200">Location:</span> Taiwan Tech Arena</p>
+                        <p><span class="font-semibold text-gray-200">Presented By:</span> Taiwan Tech Arena - CES 2026 Preparation Program</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Overview Tab -->
+            <div id="overview" class="tab-content animate-fade-in">
+                <h2 class="text-3xl font-bold mb-6 text-cyan-400">Program at a Glance</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                    <div class="card-gradient border border-gray-700 rounded-xl p-6 text-center neon-glow">
+                        <span class="text-5xl font-bold text-white">56</span>
+                        <p class="text-gray-400 mt-2 text-lg">Startups</p>
+                    </div>
+                    <div class="card-gradient border border-gray-700 rounded-xl p-6 text-center neon-glow">
+                        <span class="text-5xl font-bold text-white">12</span>
+                        <p class="text-gray-400 mt-2 text-lg">World-Class Mentors</p>
+                    </div>
+                    <div class="card-gradient border border-gray-700 rounded-xl p-6 text-center neon-glow">
+                        <span class="text-5xl font-bold text-white">8.5</span>
+                        <p class="text-gray-400 mt-2 text-lg">Hours of Intensive Training</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-bold mb-4 text-cyan-400">Program Tracks</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="card-gradient border border-fuchsia-500/50 rounded-lg p-6">
+                        <h4 class="text-xl font-bold text-fuchsia-400 mb-2">Challengers</h4>
+                        <p class="text-gray-300">A dedicated track for <span class="font-bold">30 startups</span> focused on fundamental skills like booth engagement, lead generation, and effective follow-up strategies for a successful first CES experience.</p>
+                    </div>
+                    <div class="card-gradient border border-cyan-500/50 rounded-lg p-6">
+                        <h4 class="text-xl font-bold text-cyan-400 mb-2">Deal Makers</h4>
+                        <p class="text-gray-300">An advanced track for <span class="font-bold">26 startups</span> aiming to master enterprise sales, with deep dives into adaptive pitching, high-stakes negotiation, and corporate partnership structuring.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schedule Tab -->
+            <div id="schedule" class="tab-content">
+                <h2 class="text-3xl font-bold mb-6 text-cyan-400">Bootcamp Agenda</h2>
+                <div class="relative pl-8">
+                    <!-- Timeline Items -->
+                    <div class="timeline-item relative pb-8">
+                        <div class="timeline-dot bg-indigo-500"></div>
+                        <p class="font-semibold text-gray-400">08:30 - 09:00</p>
+                        <h3 class="text-xl font-bold text-white">Check-in & Registration</h3>
+                    </div>
+                    <div class="timeline-item relative pb-8">
+                        <div class="timeline-dot bg-indigo-500"></div>
+                        <p class="font-semibold text-gray-400">09:00 - 09:20</p>
+                        <h3 class="text-xl font-bold text-white">Opening Remarks & Group Photo</h3>
+                    </div>
+                    <div class="timeline-item relative pb-8">
+                        <div class="timeline-dot bg-fuchsia-500"></div>
+                        <p class="font-semibold text-gray-400">09:20 - 10:05</p>
+                        <h3 class="text-xl font-bold text-white">Theme Keynotes</h3>
+                        <p class="text-gray-300">With Deborah Magid, Dr. Volker Kaese, and Volker Heistermann.</p>
+                    </div>
+                    <div class="timeline-item relative pb-8">
+                        <div class="timeline-dot bg-sky-500"></div>
+                        <p class="font-semibold text-gray-400">10:05 - 10:25</p>
+                        <h3 class="text-xl font-bold text-white">Interactive Cold Outreach Workshop</h3>
+                    </div>
+                    <div class="timeline-item relative pb-8">
+                        <div class="timeline-dot bg-green-500"></div>
+                        <p class="font-semibold text-gray-400">10:30 - 12:00</p>
+                        <h3 class="text-xl font-bold text-white">Sales Pitch Training Pods</h3>
+                        <p class="text-gray-300">Live delivery practice and assessment across 7 stations.</p>
+                    </div>
+                    <div class="timeline-item relative pb-8">
+                        <div class="timeline-dot bg-gray-500"></div>
+                        <p class="font-semibold text-gray-400">12:00 - 13:00</p>
+                        <h3 class="text-xl font-bold text-white">Networking Lunch & Mentor Assessment</h3>
+                    </div>
+                    <div class="timeline-item relative pb-8">
+                        <div class="timeline-dot bg-yellow-500"></div>
+                        <p class="font-semibold text-gray-400">13:00 - 14:30</p>
+                        <h3 class="text-xl font-bold text-white">Workshop Rotation 1</h3>
+                        <p class="text-gray-300">Challengers & Deal Makers attend specialized workshops.</p>
+                    </div>
+                    <div class="timeline-item relative pb-8">
+                        <div class="timeline-dot bg-rose-500"></div>
+                        <p class="font-semibold text-gray-400">14:30 - 14:50</p>
+                        <h3 class="text-xl font-bold text-white">Break</h3>
+                    </div>
+                     <div class="timeline-item relative pb-8">
+                        <div class="timeline-dot bg-yellow-500"></div>
+                        <p class="font-semibold text-gray-400">14:50 - 16:20</p>
+                        <h3 class="text-xl font-bold text-white">Workshop Rotation 2</h3>
+                        <p class="text-gray-300">Groups rotate to their second specialized workshop.</p>
+                    </div>
+                     <div class="timeline-item relative pb-8">
+                        <div class="timeline-dot bg-indigo-500"></div>
+                        <p class="font-semibold text-gray-400">16:20 - 16:50</p>
+                        <h3 class="text-xl font-bold text-white">General Feedback & Share-outs</h3>
+                    </div>
+                     <div class="timeline-item relative pb-4">
+                        <div class="timeline-dot bg-red-600"></div>
+                        <p class="font-semibold text-gray-400">16:50 - 17:10</p>
+                        <h3 class="text-xl font-bold text-white">Closing Ceremony</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Program Flow Tab -->
+            <div id="flow" class="tab-content">
+                 <h2 class="text-3xl font-bold mb-8 text-cyan-400 text-center">Program Flow Visualization</h2>
+                 <div class="flex flex-col md:flex-row items-stretch justify-center space-y-4 md:space-y-0 md:space-x-2">
+                    <!-- Stage 1 -->
+                    <div class="flex-1 text-center">
+                        <div class="card-gradient border border-indigo-500/50 rounded-xl p-4 h-full flex flex-col justify-center">
+                            <h4 class="font-bold text-indigo-400 text-lg">Phase 1</h4>
+                            <p class="text-sm">Opening & Keynotes</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex items-center justify-center flow-arrow">&rarr;</div>
+                    <!-- Stage 2 -->
+                     <div class="flex-1 text-center">
+                        <div class="card-gradient border border-green-500/50 rounded-xl p-4 h-full flex flex-col justify-center">
+                            <h4 class="font-bold text-green-400 text-lg">Phase 2</h4>
+                            <p class="text-sm">Morning Skill Development</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex items-center justify-center flow-arrow">&rarr;</div>
+                    <!-- Stage 3 -->
+                    <div class="flex-1 text-center">
+                        <div class="card-gradient border border-yellow-500/50 rounded-xl p-4 h-full flex flex-col justify-center">
+                            <h4 class="font-bold text-yellow-400 text-lg">Phase 3</h4>
+                            <p class="text-sm">Afternoon Specialized Tracks</p>
+                        </div>
+                    </div>
+                     <div class="hidden md:flex items-center justify-center flow-arrow">&rarr;</div>
+                     <!-- Stage 4 -->
+                    <div class="flex-1 text-center">
+                        <div class="card-gradient border border-red-500/50 rounded-xl p-4 h-full flex flex-col justify-center">
+                            <h4 class="font-bold text-red-400 text-lg">Phase 4</h4>
+                            <p class="text-sm">Closing & Next Steps</p>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+
+            <!-- Morning Workshops Tab -->
+            <div id="morning-workshops" class="tab-content">
+                <h2 class="text-3xl font-bold mb-6 text-cyan-400">Morning Deep Dive (09:20 - 12:00)</h2>
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-fuchsia-400 border-l-4 border-fuchsia-400 pl-4">Theme Keynotes</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                             <div class="card-gradient border border-gray-700 rounded-lg p-4 h-full flex flex-col">
+                                <h4 class="font-bold text-white">Corporate & Gov't Partnerships</h4>
+                                <p class="text-sm text-gray-400">Deborah Magid</p>
+                                <p class="text-sm text-gray-300 mt-2 flex-grow">De-risk innovation for US corps & navigate non-dilutive funding.</p>
+                            </div>
+                            <div class="card-gradient border border-gray-700 rounded-lg p-4 h-full flex flex-col">
+                                <h4 class="font-bold text-white">The CES Mindset</h4>
+                                <p class="text-sm text-gray-400">Dr. Volker Kaese</p>
+                                 <p class="text-sm text-gray-300 mt-2 flex-grow">Master the 10-second relevancy rule for US business culture.</p>
+                            </div>
+                             <div class="card-gradient border border-gray-700 rounded-lg p-4 h-full flex flex-col">
+                                <h4 class="font-bold text-white">Sales with Generative AI</h4>
+                                <p class="text-sm text-gray-400">Volker Heistermann</p>
+                                <p class="text-sm text-gray-300 mt-2 flex-grow">Live demo on using AI to supercharge sales activities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-sky-400 border-l-4 border-sky-400 pl-4">Interactive Cold Outreach Workshop</h3>
+                         <div class="card-gradient border border-gray-700 rounded-lg p-6">
+                             <ul class="space-y-2 text-gray-300">
+                                 <li><strong class="text-white">Facilitator:</strong> Mark Birch</li>
+                                 <li><strong class="text-white">Format:</strong> "Good vs. Bad" visual gallery of websites, LinkedIn profiles, & emails.</li>
+                                 <li><strong class="text-white">Activity:</strong> Interactive "Lightning Fix" with audience suggestions.</li>
+                                 <li><strong class="text-white">Takeaway:</strong> Rapid recap of the three core rules of outreach.</li>
+                             </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-green-400 border-l-4 border-green-400 pl-4">Sales Pitch Training & Assessment</h3>
+                         <div class="card-gradient border border-gray-700 rounded-lg p-6">
+                             <ul class="space-y-2 text-gray-300">
+                                <li><strong class="text-white">Structure:</strong> 7 small groups for intensive, hands-on practice.</li>
+                                <li><strong class="text-white">Focus:</strong> Live delivery, messaging, and script refinement—not slide design.</li>
+                                <li><strong class="text-white">Content:</strong> Storytelling, 30-Sec Pitch, USP, Competitive Advantage, The Ask.</li>
+                                <li><strong class="text-white">Format:</strong> Startups present for immediate mentor and peer feedback.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Afternoon Workshops Tab -->
+            <div id="afternoon-workshops" class="tab-content">
+                 <h2 class="text-3xl font-bold mb-6 text-cyan-400">Afternoon Specialized Workshops (13:00 - 16:20)</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Challengers Column -->
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-bold text-yellow-400 border-l-4 border-yellow-400 pl-4">Challenger Track</h3>
+                        <div class="card-gradient border border-gray-700 rounded-lg p-6">
+                            <h4 class="text-xl font-bold text-white mb-2">Workshop 1: Fact Finding & Booth Engagement</h4>
+                            <ul class="list-disc list-inside text-gray-300 space-y-1">
+                                <li><span class="font-semibold">Goal:</span> Convert passersby into meetings.</li>
+                                <li><span class="font-semibold">Activity:</span> Live simulations with mentors as buyers.</li>
+                                <li><span class="font-semibold">Skills:</span> 10-second hooks, fact-finding questions.</li>
+                                <li><span class="font-semibold">Mentors:</span> Wilson Khoo, Luca Di Fiore, Deborah Magid, Johnny Yu.</li>
+                            </ul>
+                        </div>
+                        <div class="card-gradient border border-gray-700 rounded-lg p-6">
+                            <h4 class="text-xl font-bold text-white mb-2">Workshop 2: CES Floor Hunting & Follow-Up</h4>
+                             <ul class="list-disc list-inside text-gray-300 space-y-1">
+                                <li><span class="font-semibold">Floor Hunting:</span> Target booth mapping, badge reading.</li>
+                                <li><span class="font-semibold">Party Tactics:</span> Get invited to VIP events, approach execs.</li>
+                                <li><span class="font-semibold">Follow-Up:</span> Master the 24-hour rule, build a cadence.</li>
+                                <li><span class="font-semibold">Mentors:</span> Bruce Bateman, Mark Birch, Shafeen Charania, Christopher Balmaseda.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Deal Makers Column -->
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-bold text-sky-400 border-l-4 border-sky-400 pl-4">Deal Maker Track</h3>
+                        <div class="card-gradient border border-gray-700 rounded-lg p-6">
+                             <h4 class="text-xl font-bold text-white mb-2">Workshop 3: Adaptive Pitching</h4>
+                             <ul class="list-disc list-inside text-gray-300 space-y-1">
+                                <li><span class="font-semibold">Format:</span> Each rotation group (12-13 startups) begins with a joint intro lecture before splitting into two practice rooms.</li>
+                                <li><span class="font-semibold">Goal:</span> Pivot pitch based on stakeholder.</li>
+                                <li><span class="font-semibold">Activity:</span> Role-play with mentors as CEO, CFO, CTO.</li>
+                                <li><span class="font-semibold">Skills:</span> Real-time message adaptation.</li>
+                                <li><span class="font-semibold">Mentors:</span> Ashley Hsueh, Dr. Volker Kaese.</li>
+                            </ul>
+                        </div>
+                        <div class="card-gradient border border-gray-700 rounded-lg p-6">
+                             <h4 class="text-xl font-bold text-white mb-2">Workshop 4: Meeting Skills & Negotiation</h4>
+                             <ul class="list-disc list-inside text-gray-300 space-y-1">
+                                <li><span class="font-semibold">Format:</span> Startups in each rotation group go directly into two separate rooms for immediate hands-on simulations.</li>
+                                <li><span class="font-semibold">Goal:</span> Turn conversations into contracts.</li>
+                                <li><span class="font-semibold">Activity:</span> Advanced simulations of PoCs, partnerships.</li>
+                                <li><span class="font-semibold">Skills:</span> "Give-get" framework, objection handling.</li>
+                                <li><span class="font-semibold">Mentors:</span> Leland Lai, Chander Kant.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Mentors Tab -->
+            <div id="mentors" class="tab-content">
+                <h2 class="text-3xl font-bold mb-6 text-cyan-400">Our Experts</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Mentors will be dynamically inserted here -->
+                </div>
+            </div>
+            
+            <!-- Curriculum Tab -->
+            <div id="curriculum" class="tab-content">
+                <h2 class="text-3xl font-bold mb-6 text-cyan-400">Core Curriculum & Skill Development</h2>
+                <p class="text-lg text-gray-300 mb-8 text-center">Our curriculum is an intensive, hands-on program designed to transform startups into globally competitive companies. We focus on four critical pillars of success for the US market.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="card-gradient border border-fuchsia-500/50 rounded-lg p-6">
+                        <h4 class="text-xl font-bold text-fuchsia-400 mb-2">1. Mastering the Pitch</h4>
+                        <p class="text-gray-300">Startups learn to articulate their value proposition instantly. Training covers storytelling, refining the 30-second elevator pitch, building a compelling 3-minute sales pitch, and defining a unique selling proposition (USP).</p>
+                    </div>
+                    <div class="card-gradient border border-cyan-500/50 rounded-lg p-6">
+                        <h4 class="text-xl font-bold text-cyan-400 mb-2">2. US Market Penetration</h4>
+                        <p class="text-gray-300">We demystify US business culture. Sessions focus on adapting to American expectations, the language of corporate innovation, navigating government funding opportunities (SBIR/STTR), and building strategic partnerships.</p>
+                    </div>
+                    <div class="card-gradient border border-cyan-500/50 rounded-lg p-6">
+                        <h4 class="text-xl font-bold text-cyan-400 mb-2">3. Digital & Outreach Excellence</h4>
+                        <p class="text-gray-300">Founders are trained to build a powerful first impression online. This includes optimizing LinkedIn profiles, crafting effective cold outreach emails, leveraging Generative AI for sales, and creating a clear and compelling website presence.</p>
+                    </div>
+                    <div class="card-gradient border border-fuchsia-500/50 rounded-lg p-6">
+                        <h4 class="text-xl font-bold text-fuchsia-400 mb-2">4. Live Engagement & Negotiation</h4>
+                        <p class="text-gray-300">The program simulates the high-pressure CES environment. Startups practice booth engagement, lead qualification, party networking tactics, enterprise negotiation, and objection handling to turn conversations into contracts.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logistics Tab -->
+            <div id="logistics" class="tab-content">
+                <h2 class="text-3xl font-bold mb-6 text-cyan-400">Operational Plan</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-fuchsia-400 mb-4">Room Allocation Summary</h3>
+                        <div class="space-y-4">
+                            <div class="card-gradient p-4 rounded-lg border border-gray-700">
+                                <h4 class="font-bold text-white">Morning Sessions</h4>
+                                <ul class="list-disc list-inside text-gray-300">
+                                    <li><span class="font-semibold">Keynotes & Outreach:</span> Staircase Area</li>
+                                    <li><span class="font-semibold">7 Training Stations:</span> Multiple Rooms (TBD)</li>
+                                </ul>
+                            </div>
+                             <div class="card-gradient p-4 rounded-lg border border-gray-700">
+                                <h4 class="font-bold text-white">Challenger Workshops</h4>
+                                <ul class="list-disc list-inside text-gray-300">
+                                    <li><span class="font-semibold">Fact Finding:</span> Staircase Area (Left & Right)</li>
+                                    <li><span class="font-semibold">CES Hunting:</span> Room 418 & Kitchen Area</li>
+                                </ul>
+                            </div>
+                             <div class="card-gradient p-4 rounded-lg border border-gray-700">
+                                <h4 class="font-bold text-white">Deal Maker Workshops</h4>
+                                <ul class="list-disc list-inside text-gray-300">
+                                    <li><span class="font-semibold">Adaptive Pitching:</span> Room 302 & 308</li>
+                                    <li><span class="font-semibold">Negotiation:</span> Room 301 & Counter Area</li>
+                                </ul>
+                            </div>
+                             <div class="card-gradient p-4 rounded-lg border border-gray-700">
+                                <h4 class="font-bold text-white">Closing Sessions</h4>
+                                <ul class="list-disc list-inside text-gray-300">
+                                    <li><span class="font-semibold">Feedback & Ceremony:</span> Main Hall</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                     <div>
+                        <h3 class="text-2xl font-bold text-fuchsia-400 mb-4">Mentor Deployment</h3>
+                        <p class="text-gray-300 mb-4">All 12 mentors are fully deployed across all interactive sessions to ensure a low mentor-to-startup ratio and maximize personalized feedback.</p>
+                        <div class="space-y-4">
+                             <div class="card-gradient p-4 rounded-lg border border-gray-700">
+                                <h4 class="font-bold text-white">Morning Training Pods (10:30-12:00)</h4>
+                                <p class="text-gray-300">All 12 mentors distributed across 7 training stations.</p>
+                            </div>
+                             <div class="card-gradient p-4 rounded-lg border border-gray-700">
+                                <h4 class="font-bold text-white">Afternoon Workshops (13:00-16:20)</h4>
+                                <p class="text-gray-300">Mentors are deployed in pairs for Challenger workshops and solo for the more intensive Deal Maker sessions, ensuring focused expertise for each track.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Tab switching logic
+        const tabNav = document.getElementById('tab-nav');
+        const tabContents = document.getElementById('tab-content-container').children;
+
+        tabNav.addEventListener('click', (e) => {
+            if (e.target.tagName === 'BUTTON') {
+                const tabId = e.target.dataset.tab;
+
+                // Update button styles
+                for (const btn of tabNav.children) {
+                    btn.classList.remove('active');
+                }
+                e.target.classList.add('active');
+
+                // Update content visibility
+                for (const content of tabContents) {
+                    content.classList.remove('active');
+                    if (content.id === tabId) {
+                        content.classList.add('active');
+                    }
+                }
+            }
+        });
+
+        // Simple fade-in animation for active tabs
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes fade-in {
+                from { opacity: 0; transform: translateY(10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            .animate-fade-in {
+                animation: fade-in 0.5s ease-in-out;
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Dynamically insert mentor cards
+        const mentors = [
+            { name: 'Ashley Hsueh', company: 'Bain & Company', expertise: 'Corporate Strategy, Go-to-Market, M&A' },
+            { name: 'Bruce Bateman', company: 'Cold Electric', expertise: 'Deep-Tech Hardware, R&D Leadership' },
+            { name: 'Chander Kant', company: 'K Ventures', expertise: 'SaaS, M&A exits, Angel investing' },
+            { name: 'Christopher Balmaseda', company: 'Valtec', expertise: 'Cross-border venture building, Biotech' },
+            { name: 'Deborah Magid', company: 'Independent VC Advisor', expertise: 'Corporate VC, Enterprise Software' },
+            { name: 'Dr. Volker Kaese', company: 'Ingenev Mobility', expertise: 'Corporate Innovation, Automotive' },
+            { name: 'Johnny Yu', company: 'Mosaic Venture Lab', expertise: 'Finance, Operations, Investment' },
+            { name: 'Leland Lai', company: 'phireGEN Advisory', expertise: 'Telecommunications, Mobile Tech' },
+            { name: 'Luca Di Fiore', company: 'ADATA Technology', expertise: 'R&D, Product Mgmt, Hardware Eng.' },
+            { name: 'Mark Birch', company: 'TribeROI', expertise: 'Developer Relations, Community Building' },
+            { name: 'Shafeen Charania', company: 'fluency', expertise: 'Strategy/Operations leader, COO/PM' },
+            { name: 'Wilson Khoo', company: 'co-pace (Aumovio)', expertise: 'Corporate VC, Mobility' },
+        ];
+        const mentorsContainer = document.querySelector('#mentors .grid');
+        mentors.forEach(mentor => {
+            const mentorCard = `
+                <div class="card-gradient border border-gray-700 rounded-lg p-5 transition-all duration-300 hover:border-cyan-400 hover:scale-105">
+                    <h3 class="text-xl font-bold text-white">${mentor.name}</h3>
+                    <p class="text-cyan-400 font-semibold">${mentor.company}</p>
+                    <p class="text-gray-400 text-sm mt-2">${mentor.expertise}</p>
+                </div>
+            `;
+            mentorsContainer.innerHTML += mentorCard;
+        });
+
+    </script>
+</body>
+</html>
+
+
